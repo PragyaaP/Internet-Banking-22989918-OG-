@@ -1,0 +1,150 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<html>
+  <head>
+    <style>
+    .text-center
+    {
+      font-weight: 500;
+      font-size: 40px;
+      font-family: 'Times New Roman', Times, serif;
+    }
+    .divider
+    {
+      position: relative;
+      
+    }
+    .div-transparent
+    {
+      content: "";
+      position: absolute;
+      left: 5%;
+      right: 5%;
+      width: 90%;
+      height: 1px;
+      background-image: linear-gradient(to left, transparent, rgb(48,49,51), transparent);
+    }
+    .col-sm-4
+    {
+      padding-top: 50px;
+    }
+    .col-heading
+    {
+      font-size: 25px;
+      font-weight: 450;
+    }
+    .col-matter
+    {
+      font-size: 15px;
+    }
+    .bg-head{
+        color:white;  
+    }
+    .head-background{
+        background-color:darkblue;
+        border-radius:45px;
+        
+    }
+    .customer-block{
+        background-color:darkcyan;
+        color:antiquewhite;
+    }
+    .employee-block{
+        background-color:blue;
+        color:white;
+    }
+    .cols-1{
+        background-color:black;
+        color:white;
+        border-radius:45px;
+        background-image: linear-gradient(to bottom right, black,white);
+    }
+    .cols-2{
+        background-color:lightgrey;
+        border-radius:45px;
+        background-image: linear-gradient(to bottom right, violet,blue );
+    }
+    .form-rounded{
+        border-radius:1rem;
+    }
+    .form-control{
+        margin-bottom:15px;
+    }
+    .border{
+        border-block-color:black;
+    }
+    .bg-image{
+        background-image:url("https://i.pinimg.com/600x315/14/f6/43/14f64328ffef40a0aa701f00779389d5.jpg");
+        background-repeat:no-repeat;
+        background-position:center;
+        background-size:cover;
+        height:auto;
+        width:auto;
+    }
+   
+    </style>
+  </head>
+
+<body class="container bg-image " >
+    <div class="head-background">
+<p class="text-center bg-head">SBOnline</p>
+<div class="divider"></div></div>
+<marquee style="color:red"> welcome to internet banking 2022*</marquee>
+<div class="row">
+    
+  <div class="col-sm-6 text-center form-rounded ">
+    <div class="card cols-1">
+        <div class="card-title">
+    <p class="col-heading">Personal Banking</p>
+    </div>
+    <div class="card-body">
+    <div class='container-sm'>
+    <form>
+        
+        <h5>Login</h5>
+        <div class="form-group ">
+            
+            <input type='text' class="form-control form-rounded" placeholder="UserName" id="username" required>
+            
+            <input type='password' class="form-control form-rounded" placeholder="Password" id="password" required></br>
+            
+            <button type="submit" class="btn btn-success"> Submit</button>
+        </div>
+    </form>
+    </div>
+    <small class="col-matter"><a href="#">Register? </a>&nbsp;<u>   Forgot password</u></small>
+    </div>
+    </div>
+  </div>
+  
+  
+  <div class="col-sm-6 text-center form-rounded  ">
+      <div class="card cols-2">
+          <div class="card-title">
+    <p class="col-heading">Employee</p></div>
+    <div class="card-body">
+    <form>
+        <h5>Login</h5>
+        <div class="form-group ">
+            
+            <input type='text' class="form-control form-rounded border" placeholder="UserName" id="username" required>
+            
+            <input type='password' class="form-control form-rounded border" placeholder="Password" id="password" required>
+            <select class="form-control form-select">
+                <option>Admin</option>
+                <option>Branch manger</option>
+            </select>
+            <button type="submit" class="btn btn-success"> Submit</button>
+        </div>
+    </form>
+    <small class="col-matter"><a href="#">Register? </a>&nbsp;<u style="color:floralwhite;">   Forgot password</u></small>
+    </div>
+    </div>
+  </div>
+  
+
+</div>
+</body>
+</html>
